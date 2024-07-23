@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "uniquesdktest"
+version = "0.1.0"
+description = ""
+authors = ["Thibaud Bourgeois"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "uniquesdk_test" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+unique_sdk = "^0.8.11"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
