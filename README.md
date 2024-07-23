@@ -68,6 +68,10 @@ python uniquesdk_test/embeddings_create.py
 python uniquesdk_test/file_io.py
 python uniquesdk_test/message_create.py
 python uniquesdk_test/message_list.py
+python uniquesdk_test/message_retrieve.py
+python uniquesdk_test/message_modify.py
+python uniquesdk_test/message_delete.py
+python uniquesdk_test/chat_stream_completion.py
 python uniquesdk_test/search_create.py
 python uniquesdk_test/search_string_create.py
 python uniquesdk_test/short_term_memory.py
@@ -76,68 +80,64 @@ python uniquesdk_test/uniqueql_query.py
 python uniquesdk_test/webhook_verification.py
 ```
 
-## File Descriptions
-
+## File Descriptions 
+ 
 - `acronyms_get.py`:
-
-  Demonstrates how to retrieve acronyms defined for a company using the `unique_sdk`.
-
+Demonstrates how to retrieve acronyms defined for a company using the `unique_sdk`.
+ 
 - `chat_completions.py`:
-
-  Shows how to create a chat completion using the AI model supported by Unique FinanceGPT.
-
+Shows how to create a chat completion using the AI model supported by Unique FinanceGPT.
+ 
 - `chat_history_util.py`:
-
-  Illustrates how to load chat history and convert it into an injectable string format.
-
+Illustrates how to load chat history and convert it into an injectable string format.
+ 
 - `content_search.py`:
-
-  Demonstrates how to search for content based on specific criteria.
-
+Demonstrates how to search for content based on specific criteria.
+ 
 - `content_upsert.py`:
-
-  Shows how to upsert (upload or update) content and update its metadata.
-
+Shows how to upsert (upload or update) content and update its metadata.
+ 
 - `embeddings_create.py`:
-
-  Illustrates how to create embeddings for an array of text.
-
+Illustrates how to create embeddings for an array of text.
+ 
 - `file_io.py`:
-
-  Demonstrates file operations such as downloading and uploading files to the knowledge-base.
-
+Demonstrates file operations such as downloading and uploading files to the knowledge-base.
+ 
 - `message_create.py`:
-
-  Shows how to create a new message in a chat.
-
+Shows how to create a new message in a chat.
+ 
 - `message_list.py`:
-
-  Demonstrates how to list messages for a specific chat.
-
+Demonstrates how to list messages for a specific chat.
+ 
+- `message_retrieve.py`:
+Demonstrates how to retrieve a single chat message.
+ 
+- `message_modify.py`:
+Demonstrates how to modify an existing chat message.
+ 
+- `message_delete.py`:
+Demonstrates how to delete a chat message.
+ 
+- `chat_stream_completion.py`:
+Demonstrates how to stream chat completion to the chat frontend.
+ 
 - `search_create.py`:
-
-  Illustrates how to perform a search query on the Unique FinanceGPT Knowledge database.
-
+Illustrates how to perform a search query on the Unique FinanceGPT Knowledge database.
+ 
 - `search_string_create.py`:
-
-  Demonstrates how to create a search string from a user message for more effective searching.
-
+Demonstrates how to create a search string from a user message for more effective searching.
+ 
 - `short_term_memory.py`:
-
-  Shows how to use the short term memory functionality to save and retrieve data between chat interactions.
-
+Shows how to use the short term memory functionality to save and retrieve data between chat interactions.
+ 
 - `sources_util.py`:
-
-  Demonstrates how to use the sources utility functions, including merging, sorting, and post-processing of search results.
-
+Demonstrates how to use the sources utility functions, including merging, sorting, and post-processing of search results.
+ 
 - `uniqueql_query.py`:
-
-  Shows how to perform a search with detailed metadata filtering using UniqueQL.
-
+Shows how to perform a search with detailed metadata filtering using UniqueQL.
+ 
 - `webhook_verification.py`:
-
-  Sets up a Flask application to handle and verify incoming webhooks, ensuring their signatures are valid.
-
+Sets up a Flask application to handle and verify incoming webhooks, ensuring their signatures are valid.
 
 ## License 
 This project is licensed under the MIT License - see the LICENSE  file for details.
